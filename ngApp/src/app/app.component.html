@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a href="#" class="navbar-brand">English Kids Talks</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse">
+    <span class="navbar-toggle-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedCOntent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/events" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/special" routerLinkActive="active">Contact</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <a class="nav-link" *ngIf="!auth.loggedIn()" routerLink="/login" routerLinkActive="active">Login</a>
+      <a class="nav-link" *ngIf="!auth.loggedIn()" routerLink="/register" routerLinkActive="active">Register</a>
+      <a class="nav-link" style="cursor:pointer" *ngIf="auth.loggedIn()" (click)="auth.logoutUser()">Logout</a>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
