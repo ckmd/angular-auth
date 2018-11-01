@@ -1,0 +1,14 @@
+1. Turn on the Server
+	- open the terminal and navigate to /server. using command "cd /server"
+	- inside the directory /server turn on the server using command "node server"
+	- wait until bundle finished, and then check the localhost:3000 and connected to the mongoDB
+2. Turn on the FrontEnd
+	- open the terminal and navigate to /ngApp using command "cd /server"
+	- inside the directory /ngApp turn on the angular using command "ng serve"
+	- wait until the bundle finished and open the http://localhost:4200/
+3. download or clone the file and then improve with your project
+4. learn and share the tutorial to the others
+5. Thank you (y)
+
+created at : november 1st, 2018
+Rachmad Hidayat
